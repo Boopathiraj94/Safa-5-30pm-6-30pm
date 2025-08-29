@@ -1,0 +1,40 @@
+Extensions
+==========
+ filename.txt
+ 
+Images 
+=====
+.jpeg
+.jpg
+.png
+.gif
+.pdf
+.txt
+.html
+.css
+.js
+
+url => uniform resource locator
+
+Tasks1:
+   1 => create the html file
+   2 => write the simple html code 
+   3 => Inside body tag => write the content of 50 lines
+
+============
+ Github => it is used to store the data (what ever) in a online platform
+    Ex :-> gitlab , bitbucket, asure, ....
+	it is free to use for user
+
+Communications:
+===============
+git is a tool for connecting the online storage (git lab,github...)
+
+ => open source
+ => free to use
+
+
+
+
+   
+
