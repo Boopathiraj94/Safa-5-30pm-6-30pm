@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        /* thead{
+            background-color: bisque;
+        }
+        tbody{
+            background-color: blueviolet;
+        } */
+
+        table,th,td{
+            border: 2px solid black;
+            border-collapse:collapse ;
+        }
+
+        /* tfoot{
+            background-color: aqua;
+        } */
+
+        caption{
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Table</h1>
+
+    <!-- 
+     <table>
+     <tr> => table row
+     <th> => table heading (column)
+     <td> => table data
+  SEO   
+    -->
+
+    <table >
+        <caption>Student Details</caption>
+        <colgroup>
+            <col span="2" style="background-color: #892be256;">
+            <col style="background-color: #0000ff31;">
+        </colgroup>
+        <thead  >
+            <tr>
+                <th>Sno</th>
+                <th>Student Name</th>
+                <th>Class</th>
+                <th>Section</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr >
+                <td>1</td>
+                <td>Safa</td>
+                <td rowspan="5">II Year</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Safa1</td>
+                <!-- <td>II Year</td> -->
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Safa2</td>
+                <!-- <td>II Year</td> -->
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Safa3</td>
+                <!-- <td>II Year</td> -->
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Safa4</td>
+                <!-- <td>II Year</td> -->
+                <td>A</td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <tr>
+                    <td colspan="3" align="right">Total</td> 
+                    <td>5</td>
+                </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>
