@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <h1>Forms</h1>
+
+    <!-- 
+    Form => it is used to get the datas as well as send to server for further process
+
+    attribute
+    action => sent the data to server
+
+    input fields
+    ==========
+    single line input => input type="text"
+
+    radio => only one option choose
+    checkbox => one or more option choose
+    -->
+
+    <form action="">
+        <label for="first_name">Enter your Name</label>
+        <input type="text" id="first_name" name="fname"> <br>
+
+        <label for="last_name">Enter Last Name</label>
+        <input type="text" id="last_name" name="lname"> <br>
+
+        <label for="">Choose Gender?</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female <br>
+
+        <label for="">Choose Your Course</label> <br>
+        <input type="checkbox" name="course" value="Python"> Python<br>
+        <input type="checkbox" name="course" value="Data Science"> Data Science<br>
+        <input type="checkbox" name="course" value="AI"> AI<br>
+        <input type="checkbox" name="course" value=" ML"> ML<br>
+        <input type="checkbox" name="course" value="DL"> DL <br>
+
+        <label for="">Enter DOB</label>
+        <input type="date" name="dob"> <br>
+        <!-- <input type="time"> <br>
+
+        <input type="datetime-local">
+
+        <input type="month">
+
+        <input type="week"> <br>
+
+        <label for="">Enter username</label>
+        <input type="text"> <br>
+        <label for="">Password</label>
+        <input type="password">
+
+        <input type="number"> -->
+
+        <label for="">Email</label>
+        <input type="email" name="email">
+        <br>
+
+
+        <!-- dropdown / select option 
+        select 
+        option => is used to choose the values
+        selected => used to select the option value  (default)
+        multiple => you can choose the multiple option in one at a time
+        size => is used to visible options
+        optgroup => used to create the group of option tag
+        
+        -->
+
+        <select name="" id="" >
+            <optgroup label="UG">
+                <option value="BSC - CS">BSC - CS</option>
+                <option value="BSC - Maths">BSC - Maths</option>
+                <option value="BSC - Phy">BSC - Phy</option>
+            </optgroup>
+            <optgroup label="PG"> 
+                <option value="Msc - Maths" selected>Msc - Maths</option>
+                <option value="Msc - AI">Msc - AI</option>
+            </optgroup>
+        </select>
+
+
+        <br>
+
+        <input type="color" name="c" value="">
+
+        <input type="file" name="" value=""> <br>
+
+        <input type="range"> <br>
+
+        <input type="search"> <br>
+
+        <input type="tel"> <br>
+
+        <input type="url">
+
+
+
+        <!-- <input type="button" value="input-go">
+        <input type="submit" value="input-submit"> -->
+
+        <input type="reset" value="reset">
+        <button type="submit">Submit</button>
+
+        <!-- <button type="button">go</button> -->
+
+    </form>
+
+</body>
+
+</html>
