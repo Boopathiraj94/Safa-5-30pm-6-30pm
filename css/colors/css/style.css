@@ -1,0 +1,55 @@
+/* names */
+h2{
+    color:red;
+}
+
+/* rgb => red ,green ,blue
+ rgb() => function
+ 3 parameter
+ 0 => black
+ 255 => white
+ rgb(0,0,0) => black
+ rgb(255, 255, 255) => white
+
+ rgba()
+
+ a => alpha => trasprent color
+
+ 1 => original
+ 0 => hidden
+
+ 0 , 0.1, 0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9, 1
+
+*/
+
+/* p{
+    color: rgba(157, 43, 20, 0.804); */
+    /* background-color: darkblue; */
+/* } */
+
+/* hsl
+  h => hue
+  s =>saturation
+  l => lightness
+
+*/
+
+.para2{
+    color: hsla(81, 76%, 33%,0.2);
+    /* background-color: darkcyan; */
+}
+
+/* HEXA & HEXAA
+  #000000 => black
+  #ffffff => white
+
+*/
+
+p{
+    color: #0f5e6078;
+}
+
+
+section{
+    background-color: #da498d9f;
+}
