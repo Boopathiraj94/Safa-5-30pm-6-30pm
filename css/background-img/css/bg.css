@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../images/beautiful-fantasy-river-magic-nature-ultra-hd-wallpaper-4k-sr10012417-1705234940826-cover.webp');
+    /* background-image: url('../images/d.webp'); */
+    /* by default repeat */
+    background-repeat: no-repeat;
+    /* background-repeat:repeat;
+    background-repeat:repeat-x;
+    background-repeat:repeat-y;
+    background-repeat:round;
+    background-repeat:space; */
+
+   
+    border: 2px solid;
+    height: 50vh;
+
+     /* background-position: center;
+
+     background-position:left top;
+     background-position:left center;
+     background-position:left bottom;
+     background-position:right top;
+     background-position:right center;
+     background-position:right bottom;
+
+     background-position:center top;
+     background-position:center;
+     background-position:center bottom; */
+
+     /* x , y axis */
+
+     /* background-position:20px 30px; */
+
+     /* background-size: 200px 400px; */
+     /* background-size: 30% 40%; */
+
+     /* background-size: cover;
+     background-size: contain; */
+     /* background-size: auto; */
+
+    background-attachment: fixed;
+    /* background-attachment: scroll; */
+    color: white;
+
+}
