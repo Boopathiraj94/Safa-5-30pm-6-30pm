@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute Selector</title>
+
+    <style>
+        /* a{
+            color: darkblue;
+        } */
+
+        /* 
+        Syntax:
+        =======
+        element[attribute]{
+            //css
+        }
+        
+        */
+/* 
+        a[href] {
+            background-color: saddlebrown;
+        } */
+
+        /* attribute */
+        /* a[data-Raja]{ 
+            background-color: seagreen;
+        } */
+
+        /* exact value match in attribute */
+        /* a[data-raja="bg-blue"] {
+            background-color: sienna;
+        } */
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .box {
+            background-color: green;
+        }
+
+ /* specified value match in attribute */
+        section[class~="box"]{
+            background-color: darkgoldenrod;
+        }
+
+        a[href^="h"]{
+            background-color: darkgreen;
+        }
+
+        a[href$="sw_cr=1"]{
+            background-color: darkorchid;
+        }
+
+        a[href*="google"]{
+            background-color: slateblue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.google.com/?zx=1757679592158&no_sw_cr=1">Google</a>
+
+    <!-- <section class="bg-red box bg-blue">
+        Lorem ipsum dolor sit
+    </section> -->
+
+    <!-- 
+     href
+     src
+     width
+     height
+     alt
+    
+    -->
+    <!-- <a href="">Home</a>
+    <a data-Raja="bg-red">Contact</a>
+    <a data-Raja="bg-blue">About</a>
+    <a href="">service</a> -->
+
+
+</body>
+
+</html>
