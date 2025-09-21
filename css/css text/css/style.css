@@ -1,0 +1,113 @@
+ h1 {
+     color: darkblue;
+ }
+
+ .para1 {
+     text-align: left;
+     /* by default */
+     text-align: start;
+
+     text-align: end;
+     text-align: right;
+
+     text-align: center;
+
+     text-align: justify;
+
+     border: 2px solid;
+
+     padding: 20px;
+     outline: 5px dotted green;
+ }
+
+ .para2 {
+     text-align-last: center;
+     text-align-last: left;
+     text-align-last: right;
+     text-align-last: justify;
+     text-align-last: auto;
+ }
+
+ .bdo {
+     direction: rtl;
+     unicode-bidi: bidi-override;
+ }
+
+ span {
+     vertical-align: super;
+     vertical-align: sub;
+     color: darkgreen;
+ }
+
+ img {
+     width: 20px;
+     vertical-align: super;
+ }
+
+ a {
+     text-align: center;
+     background-color: darkcyan;
+     padding: 8px 10px;
+     text-decoration: none;
+     color: white;
+
+     /* transform */
+
+     text-transform: uppercase;
+     text-transform: lowercase;
+ }
+
+ nav {
+     border: 2px solid;
+     text-align: center;
+     padding: 2rem;
+     box-shadow: 2px 3px;
+     box-shadow: 2px 3px 20px;
+     box-shadow: 2px 3px 7px 9px #00ffcc;
+     border-radius: 20px;
+ }
+
+ h1 {
+     /* text-decoration-line: underline; */
+     /* text-decoration-line: overline; */
+     /* text-decoration-line: line-through; */
+     /* text-decoration-line: none;
+     text-decoration-line:underline overline line-through; */
+
+     /* text-decoration-style: dashed;
+     text-decoration-style:dotted;
+     text-decoration-style:double;
+     text-decoration-style:none;
+
+     text-decoration-style:wavy;
+     
+    text-decoration:none;
+
+     text-decoration-color: red;
+     text-decoration-thickness: 3px; */
+
+     text-decoration: underline dashed darkcyan 20px;
+
+
+ }
+
+ p {
+     text-transform: capitalize;
+     /* text-indent: 30px;
+    line-height: 40px;
+
+    letter-spacing: 10px;
+    word-spacing:30px ; */
+
+     white-space: nowrap;
+     white-space: wrap;
+     text-shadow: 14px -15px 4px #a01998d4, 6px 18px 3px blue, 20px 10px 4px green;
+ }
+
+ h2 {
+     text-shadow: 1px 2px;
+     text-shadow: 10px 2px red;
+     text-shadow: 11px 9px 4px #18756ad4, 10px 2px 3px blue, 5px 2px 4px green;
+
+     text-shadow: 14px -15px 4px #a01998d4, 6px 18px 3px blue, 20px 10px 4px green;
+ }
