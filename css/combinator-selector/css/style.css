@@ -1,0 +1,32 @@
+body h1{
+    background-color: blue;
+}
+
+/* descendant selector space */
+/* section p{
+    background-color: seagreen;
+} */
+
+/* child selector  >  */
+
+/* section>p{
+    background-color: darkgoldenrod;
+} */
+
+/* next sibling selector */
+
+/* div+p{
+    background-color: darkgoldenrod;
+}
+
+h2+p{
+    background-color: darkgreen;
+}
+p+h2{
+    background-color: darkolivegreen;
+} */
+
+/* subsecquent next -sibling */
+/* h2+p{
+    background-color: darkgoldenrod;
+} */
