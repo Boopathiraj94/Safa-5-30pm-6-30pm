@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative - absolute</title>
+    <style>
+        .outer-box {
+            border: 2px solid;
+            height: 400px;
+            background: darkgray;
+            position: relative;
+
+        }
+
+        .box {
+            border: 2px solid;
+            width: 70px;
+            height: 70px;
+        }
+
+        .box1 {
+
+            background-color: darkcyan;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .box2 {
+            
+            background-color: darkkhaki;
+            position: absolute;
+            bottom: 0;
+
+        }
+        .box3 {
+            
+            background-color: darkolivegreen;
+
+        }
+        .box4 {
+            
+            background-color: darkorchid;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .card
+        {
+            /* border: 2px solid red; */
+            width: 300px;
+            position: relative;
+        }
+
+        .card img{
+            /* border: 2px solid; */
+            width: 100%;
+             height: 100%;
+           object-fit: cover;
+           
+        }
+        .card span{
+            position: absolute;
+            color: white; 
+            /* bottom: 10px; */
+            /* right: 10px; */
+              left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background: seagreen;
+            padding: 10px;
+
+            /* margin: 700px; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+    position: relative => parent element
+    position: absolute => child element
+    -->
+
+    <section class="outer-box">
+
+        <div class=" box box1">
+            1
+        </div>
+        <div class="box box2">
+            2
+        </div>
+        <div class="box box3">
+            3
+        </div>
+        <div class=" box box4">
+            4
+        </div>
+
+    </section>
+
+
+
+     <section class="card">
+        <span>50% OFF</span>
+         <img src="https://i.pinimg.com/736x/66/01/43/660143948271fc5cf9dc2b7b4769ea12.jpg" alt="">
+     </section>
+
+
+</body>
+
+</html>
