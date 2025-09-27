@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elements</title>
+
+    <style>
+
+        /* 
+        syntax:
+         selector::elements{
+         
+         }
+        */
+
+        h2::before{
+          /* content: "HI ";   */
+          /* content: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT1_N4t_Eiw6MT6o67Bmwdfi4PVUCMTqhxMA&s'); */
+
+          content: attr(data-userid);
+        }
+
+        h2::after{
+            /* content: " bye bye"; */
+            /* content: "🍕🍕🍕🍔🍟🌭🌭"; */
+            content: attr(depart);
+        }
+
+        .box{
+            border: 2px solid;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+             
+            background-color: darkgoldenrod;
+        }
+
+        .box>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .box::after, .box::before{
+            content: "";
+            width: 200px;
+            height: 200px;
+            background-color: darkcyan;
+            /* display: inline-block; */
+            position: absolute;
+            /* top: -10px;
+            right: -12px; */
+            left: 0;
+            z-index: -1;
+        }
+
+        .box:hover::after{
+            transform: rotate(40deg);
+            transition: 1s;
+        }
+         .box:hover::before{
+            transform: rotate(80deg);
+            transition: 1s;
+        }
+
+        p::first-letter{
+            color: darkcyan;
+            font-size: 50px;
+            font-weight: 900;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: darkblue;
+            
+        }
+
+        h4::first-line{
+            color: tan;
+            font-size: large;
+             font-weight: 900;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: darkblue;
+        }
+
+        li::marker{
+            content: "🛴";
+        }
+
+        /* ::selection{
+            background-color: darkgoldenrod;
+            color: blueviolet;
+        } */
+
+        p::selection{
+            background-color: darkgoldenrod;
+            color: blueviolet;
+        }
+
+        li::selection{
+             background-color: darkorchid;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+  
+    <h1>elements</h1>
+
+    
+
+     <h2 data-userid="10002" depart="Bsc"> Safa </h2>
+
+     <!-- <div class="box">
+        <img src="https://web.dev/images/authors/katiehempenius.jpg" alt="">
+     </div> -->
+
+     <br>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente sint animi accusantium eius vel porro quibusdam? Explicabo ipsam porro libero illo, maxime cum quidem repellat quibusdam pariatur eligendi? Totam.</p>
+     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente sint animi accusantium eius vel porro quibusdam? Explicabo ipsam porro libero illo, maxime cum quidem repellat quibusdam pariatur eligendi? Totam.</h4>
+
+
+     <ul>
+        <li>Welcome</li>
+        <li>Welcome</li>
+        <li>Welcome</li>
+        <li>Welcome</li>
+        <li>Welcome</li>
+        
+     </ul>
+
+    
+</body>
+</html>
