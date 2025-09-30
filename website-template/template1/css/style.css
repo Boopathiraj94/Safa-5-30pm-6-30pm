@@ -81,12 +81,14 @@ nav .social {
 
 }
 
-.social>ul>li.heart , .social>ul>li.bag {
+.social>ul>li.heart,
+.social>ul>li.bag {
     position: relative;
 
 }
 
-.social>ul>li.heart span,.social>ul>li.bag span {
+.social>ul>li.heart span,
+.social>ul>li.bag span {
     position: absolute;
     top: -10px;
     font-size: 12px;
@@ -115,37 +117,37 @@ nav .social {
 
 } */
 
-header .center-box{
+header .center-box {
     /* border: 2px solid; */
     width: 40%;
     height: 40%;
     position: relative;
     left: 50%;
     top: 40%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-     color: white;
-     padding: 2% 0;
+    color: white;
+    padding: 2% 0;
 }
 
-.center-box h3{
-     
+.center-box h3 {
+
     text-transform: uppercase;
     margin-bottom: 2%;
 }
 
-.center-box h1{
-   text-transform: capitalize;
-   font-size: 60px;
-   font-style: italic;
+.center-box h1 {
+    text-transform: capitalize;
+    font-size: 60px;
+    font-style: italic;
     margin-bottom: 4%;
 }
 
-.center-box p{
+.center-box p {
     margin-bottom: 12%;
 }
 
-.center-box a{
+.center-box a {
     text-decoration: none;
     background: whitesmoke;
     padding: 12px 15px;
@@ -153,7 +155,142 @@ header .center-box{
     display: inline-block;
 }
 
-.center-box a:hover{
+.center-box a:hover {
     background: #224229;
     color: white;
+}
+
+/* section*/
+.dec-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #F9F4EF;
+    padding: 5%;
+}
+
+.left-side,
+.right-side {
+
+    width: 600px;
+    /* height: 600px; */
+    padding: 10px;
+}
+
+.left-side h1 {
+    font-size: 55px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.right-side {
+    background: url('../imgs/img-4.png') no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.right-side>img {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+.inside-box {
+    margin-top: 40px;
+
+}
+
+.inside-box .box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.inside-box .box .box1 {
+    width: 15%;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 30px;
+    background: #224229;
+}
+
+.inside-box .box .box1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.inside-box .box .box2 {
+    width: 75%;
+
+    align-self: center;
+}
+
+/* top-rating */
+
+.top-rating {
+    border: 2px solid;
+    /* height: 500px; */
+}
+
+.top-rating .header h1 {
+    text-align: center;
+}
+
+.product-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-body .card {
+    width: 350px;
+    height: 400px;
+    /* border: 2px solid; */
+}
+
+.product-body .card .card-img {
+    /* border: 2px solid red; */
+    height: 350px;
+    background: url('../imgs/zz-plant-600x713.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
+      cursor: pointer;
+      position: relative;
+}
+
+.product-body .card .card-img:hover {
+    background: url('../imgs/zz-plant-3-600x713.jpg') no-repeat;
+    background-position: center;
+    background-size: contain;
+  
+}
+.product-body .card p:nth-child(1){
+    float: left;
+    line-height: 2;
+}
+.product-body .card p:nth-child(2){
+    float: right;
+    line-height: 2;
+}
+
+.product-body .card .card-img .icons{
+    /* border: 2px solid; */
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    font-size: 20px;
+}
+.product-body .card .card-img .icons ion-icon{
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 50%;
+    /* opacity: 0; */
+   
+}
+
+.product-body .card .card-img:hover .icons{
+    opacity: 0.5;
+    transition: 1s;
+     transform: translateY(-50px);
 }
