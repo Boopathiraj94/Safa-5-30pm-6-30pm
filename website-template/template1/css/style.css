@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE Mono", sans-serif;
+}
+
+header {
+    /* border: 2px solid red; */
+    height: 100vh;
+    background: url(../imgs/slider-10-3.jpg) no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #00000041;
+    height: 80px;
+}
+
+nav .menubar {
+    /* border: 2px solid; */
+    width: 30%;
+    align-self: center;
+}
+
+/* logo */
+nav .logo {
+    /* border: 2px solid; */
+    width: 10%;
+    align-self: center;
+}
+
+/* social media icons */
+
+nav .social {
+    /* border: 2px solid; */
+    width: 18%;
+    align-self: center;
+}
+
+
+.menubar>ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+
+}
+
+.menubar>ul>li {
+    list-style: none;
+}
+
+.menubar>ul>li>a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* logo */
+
+.logo img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+/* social */
+
+.social>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social>ul>li {
+    list-style: none;
+    color: white;
+    font-size: 28px;
+
+}
+
+.social>ul>li.heart , .social>ul>li.bag {
+    position: relative;
+
+}
+
+.social>ul>li.heart span,.social>ul>li.bag span {
+    position: absolute;
+    top: -10px;
+    font-size: 12px;
+    border: 2px solid transparent;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* .social>ul>li.heart::after{
+     
+    content: attr(data-heart-count);
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    background: white;
+    color: black;
+    /* right: 10px;  
+
+} */
+
+header .center-box{
+    /* border: 2px solid; */
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+     color: white;
+     padding: 2% 0;
+}
+
+.center-box h3{
+     
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+.center-box h1{
+   text-transform: capitalize;
+   font-size: 60px;
+   font-style: italic;
+    margin-bottom: 4%;
+}
+
+.center-box p{
+    margin-bottom: 12%;
+}
+
+.center-box a{
+    text-decoration: none;
+    background: whitesmoke;
+    padding: 12px 15px;
+    color: #0e0e0e88;
+    display: inline-block;
+}
+
+.center-box a:hover{
+    background: #224229;
+    color: white;
+}
