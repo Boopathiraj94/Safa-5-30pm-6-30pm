@@ -27,11 +27,18 @@
     border: 2px solid;
     width: 200px;
     height: 200px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* perspective: 200px; */
+    /* perspective-origin: left;
+    perspective-origin: right;
+    perspective-origin: center;
+    perspective-origin:top center;
+    perspective-origin:40px 50px;
+     */
 }
 
 .box img {
@@ -40,8 +47,9 @@
     object-fit: cover;
     transition: 2s;
     position: absolute;
+    /* border: 2px solid; */
     /* opacity: 0.2; */
-
+    /* transform:   rotateZ(45deg); */
 }
 
 .box h1 {
@@ -69,14 +77,38 @@
          */
 
     /* transform: rotate(360deg) translateX(300px); */
-     
-  /* transform: translateX(50%) rotate(30deg) scale(1.2); */
-   /* transform: translateX(50%) rotate(30deg) scale(2); Only the value of scale() changed */
- 
-   transform: rotate(90deg) translateX(200px);
+
+    /* transform: translateX(50%) rotate(30deg) scale(1.2); */
+    /* transform: translateX(50%) rotate(30deg) scale(2); Only the value of scale() changed */
+
+    /* transform: rotate(90deg) translateX(200px); */
+
+    /* transform: scaleX(2); */
+    /* transform: scaleY(2); */
+    /* transform: scale(2, 2); */
+    /* transform:  rotate(360deg) translateZ(-300px); */
+
+    /* transform: skew(45deg,60deg); */
+    border: none;
+    /* 
+    parent width check 
+     scaleX(1) => width
+     => 1 x 200px = 200px
+     => 2 x 200px = 400px
+    
+     scaleX(1) => height
+     => 1 x 200px = 200px
+     => 2 x 200px = 400px
+
+       scale(2,2) => width,height
+     => 1 x 200px = 200px
+     => 2 x 200px = 400px
+    
+    */
     transition: 2s;
 }
 
 .container {
     display: flex;
+    gap: 20px;
 }
