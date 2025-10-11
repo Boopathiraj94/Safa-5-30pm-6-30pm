@@ -1,0 +1,36 @@
+body {
+    background: salmon;
+}
+
+/* mobile */
+@media screen and (max-width:475px) {
+    body {
+        background: #4b5e36;
+    }
+
+}
+/* tablet */
+@media screen and (min-width:476px) and (max-width:768px) {
+    body {
+        background: #365c5e;
+    }
+
+}
+/* labtop */
+@media screen and (min-width:769px) and (max-width:1024px) {
+    body {
+        background: #5e365e;
+    }
+
+}
+
+@media print  {
+    h1{
+        color: darkblue;
+    }
+
+    p{
+        font-size: 40px;
+        color: teal;
+    }
+}

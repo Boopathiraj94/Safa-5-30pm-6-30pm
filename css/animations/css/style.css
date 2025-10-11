@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-marquee{
+marquee {
     border: 2px solid;
     height: 30vh;
 }
 
-.loader{
+.loader {
     border: 10px solid #44444419;
     border: 10px solid transparent;
     border-radius: 50%;
@@ -24,31 +24,48 @@ marquee{
     animation-timing-function: ease-in;
     animation-timing-function: ease-out;
     animation-timing-function: ease-in-out;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     /* animation-direction: alternate; */
 }
 
 @keyframes loader-div {
-    
-    from{
-        transform:  translateX(500px);
+
+    from {
+        transform: translateX(500px);
     }
 
     /* to{
         transform: rotate(360deg) translateX(200px);
-    } */ 
+    } */
 }
 
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-   /* position: relative; */
+   
+    animation: gradient 5s linear infinite;
+    /* position: relative; */
 }
 
-.ball{
+@keyframes gradient {
+    0% {
+        background: linear-gradient(violet, green);
+    }
+
+    50% {
+        background: linear-gradient(to right, violet, green);
+    }
+
+    100% {
+        background: linear-gradient(to left, violet, green);
+    }
+}
+
+
+.ball {
     /* border: 2px solid; */
     /* width: 100px;
     height: 100px; */
@@ -65,38 +82,58 @@ body{
     animation-fill-mode: forwards;
 }
 
-.ball:hover{
-     animation-play-state: paused;
+.ball:hover {
+    animation-play-state: paused;
 }
 
 @keyframes ball-ani {
-    
-    0%{
-         transform: translateX(-500px);;
+
+    0% {
+        transform: translateX(-500px);
+        ;
     }
 
-    10%{
+    10% {
         /* position: absolute;
         left: 20%;
         top: 30%; */
         transform: translateX(200px);
-         
+
     }
-    50%{
+
+    50% {
         /* position: absolute;
         left: 40%;
         top: 50%;  */
         /* transform: scale(2,2); */
         transform: translateX(-200px);
     }
-    60%{
+
+    60% {
         transform: translateX(100px);
     }
-    70%{
+
+    70% {
         transform: translateX(-100px);
     }
-    100%{
 
-    }
+    100% {}
 }
 
+span {
+    border-right: 2px solid;
+    vertical-align: sub;
+    display: inline-block;
+    width: 150px;
+    text-wrap: nowrap;
+    overflow: hidden;
+
+    animation: letter 2s steps(15) infinite;
+}
+
+@keyframes letter {
+    from {
+        width: 0;
+        color: blueviolet;
+    }
+}
