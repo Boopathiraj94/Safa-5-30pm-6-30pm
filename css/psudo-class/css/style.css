@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+
+selector:ps{
+}
+*/
+
+/* a:link{
+    color: aqua;
+}*/
+
+a:hover{
+    color: teal;
+} 
+a:not(:hover){
+    color: red;
+}
+
+/* a:visited{
+    color: brown;
+} */
+
+/* a:active{
+    color: black;
+} */
+
+/* input:focus{
+    background-color: chocolate;
+} */
+
+/* input[type="checkbox"]:checked~a{
+    background-color: black;
+}
+:disabled{
+    background-color: aqua;
+} */
+/* input[type="text"]:disabled{
+    background-color: aqua;
+} */
+
+/* :enabled{
+    background-color: darkgreen;
+} */
+ 
+/* :required{
+    border: 2px solid red;
+}
+
+:optional{
+    border: 2px solid green;
+} */
+
+input:in-range{
+    background-color: #158000;
+}
+
+/* ul li:first-child{
+    background-color: #158000;
+}
+
+ul li:last-child{
+    background-color: #800400;
+} */
+
+/* ul li:nth-child(2){
+    background-color: blue;
+}
+ul li:nth-child(even){
+    background-color: blue;
+}
+ul li:nth-child(odd){
+    background-color: greenyellow;
+} */
+
+ul li:nth-child(7n+1){
+     background-color: greenyellow;
+}
+
+#email:valid{
+    background-color: green;
+}
+#email:invalid{
+    background-color: red;
+}
+
+h1:empty{
+    height: 20px;
+    border: 2px solid;
+    background-color: #158000;
+}
+:is(h1, h3, p){
+   background-color: darkgoldenrod;
+}
+
+/* 
+n => 0 ,1,2,3,4,5,6...
+2 * 0 = 0 
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+*/
