@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+</head>
+
+<body>
+
+    <!-- 
+     dom => document object model
+
+     dom methods
+     -==========
+
+     document.getElementById()
+     document.getElementsByTagName()
+     document.getElementsByClassName()
+
+     property
+     ===========
+     .innerText
+     .innerHTML
+     .textContent
+    
+    -->
+    <h1 id="heading">Safa <span id="totalcount">1</span></h1>
+
+    <button onclick="increment()">Add to Cart</button>
+    <script>
+
+        //  let h =  document.getElementById("heading");
+        //  console.log(h)
+        //  console.log(h.innerText)
+
+        let increment = () => {
+            let c = document.getElementById("totalcount");
+            let count = Number(c.innerText)
+            count += 1;  // count = count+1;
+            console.log(count)
+            c.innerText = count;
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -11,6 +11,8 @@ header {
     justify-content: space-between;
     padding: 0 10%;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -27,6 +29,26 @@ nav ul {
 nav ul li {
     list-style: none;
 
+}
+.cart-count{
+    /* border: 2px solid; */
+    position: relative;
+    /* width: 50px; */
+    /* height: 40px; */
+}
+.cart-count span {
+    background: #17173ada;
+    color: white;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 4px;
+    position: absolute;
+    top: -10px;
+    font-size: 12px;
+    font-weight: 800;
 }
 
 nav ul li a {
@@ -117,8 +139,8 @@ header .logo img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-     padding: 0 10%;
-     gap: 20px;
+    padding: 0 10%;
+    gap: 20px;
 
 }
 
@@ -163,13 +185,13 @@ header .logo img {
 
 }
 
-.product-body .pro-card:hover .shopping-cart{
+.product-body .pro-card:hover .shopping-cart {
     position: absolute;
     top: 0;
     transition: 0.5s;
 }
 
-.product-body .pro-card .shopping-cart a{
+.product-body .pro-card .shopping-cart a,.product-body .pro-card .shopping-cart button {
     padding: 10px 20px;
     background: #f7444e;
     border: 1px solid;
@@ -180,18 +202,19 @@ header .logo img {
     text-decoration: none;
     color: #fff;
 }
-.product-body .pro-card .shopping-cart a:hover{
-     color: #fff;
-      background: transparent;
+
+.product-body .pro-card .shopping-cart a:hover,.product-body .pro-card .shopping-cart button:hover {
+    color: #fff;
+    background: transparent;
 }
 
-.product-container .product-footer{
-     padding: 3% 0;
-     text-align: center;
+.product-container .product-footer {
+    padding: 3% 0;
+    text-align: center;
 }
 
-.product-container .product-footer a{
-     padding: 15px 50px;
+.product-container .product-footer a {
+    padding: 15px 50px;
     background: #f7444e;
     border: 1px solid;
     margin: 10px;

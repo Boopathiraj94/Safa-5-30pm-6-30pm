@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>template2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header>
-        <div class="logo">
-           <img src="images/logo.png" alt="">
+        <div class="logo" id="logo">
+            <img src="images/logo.png" alt="">
         </div>
 
         <nav>
@@ -20,6 +23,12 @@
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
+                <li class="cart-count">
+                    <a href="#">
+                    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                    </a>
+                    <span id="addtocartcount">1</span>
+                </li>
             </ul>
         </nav>
     </header>
@@ -28,7 +37,9 @@
 
         <div class="banner-box">
             <h1>Sales 20% Off <br> On Everything</h1>
-            <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.</p>
+            <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid
+                error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat
+                modi impedit sequi.</p>
 
             <a href="#">Shop Now</a>
         </div>
@@ -47,77 +58,72 @@
         <div class="product-body">
 
 
-             <div class="pro-card">
-                 <div class="shopping-cart">
-                    <a href="#">Add to cart</a>
+            <div class="pro-card">
+                <div class="shopping-cart">
+                    <button type="button" onclick="addToCart()">Add to cart</button>
                     <a href="#">Buy Now</a>
                 </div>
                 <img src="images/p2.png" alt="">
                 <div class="details">
                     <h3>Mens wear</h3>
                     <span>$30</span>
-                </div> 
-             </div>
-             <div class="pro-card">
-                 <div class="shopping-cart">
-                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <div class="shopping-cart">
+                    <button type="button" onclick="addToCart()">Add to cart</button>
                     <a href="#">Buy Now</a>
                 </div>
                 <img src="images/p2.png" alt="">
                 <div class="details">
                     <h3>Mens wear</h3>
                     <span>$30</span>
-                </div> 
-             </div>
-             <div class="pro-card">
-                 <div class="shopping-cart">
-                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <div class="shopping-cart">
+                    <button type="button" onclick="addToCart()">Add to cart</button>
                     <a href="#">Buy Now</a>
                 </div>
                 <img src="images/p2.png" alt="">
                 <div class="details">
                     <h3>Mens wear</h3>
                     <span>$30</span>
-                </div> 
-             </div>
-             <div class="pro-card">
-                 <div class="shopping-cart">
-                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <div class="shopping-cart">
+                   <button type="button" onclick="addToCart()">Add to cart</button>
                     <a href="#">Buy Now</a>
                 </div>
                 <img src="images/p2.png" alt="">
                 <div class="details">
                     <h3>Mens wear</h3>
                     <span>$30</span>
-                </div> 
-             </div>
-             <div class="pro-card">
-                 <div class="shopping-cart">
-                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <div class="shopping-cart">
+                    <button type="button" onclick="addToCart()">Add to cart</button>
                     <a href="#">Buy Now</a>
                 </div>
                 <img src="images/p2.png" alt="">
                 <div class="details">
                     <h3>Mens wear</h3>
                     <span>$30</span>
-                </div> 
-             </div>
-             <div class="pro-card">
-                 <div class="shopping-cart">
-                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <div class="shopping-cart">
+                    <button type="button" onclick="addToCart()">Add to cart</button>
                     <a href="#">Buy Now</a>
                 </div>
                 <img src="images/p2.png" alt="">
                 <div class="details">
                     <h3>Mens wear</h3>
                     <span>$30</span>
-                </div> 
-             </div>
-            
-
-
-
-
+                </div>
+            </div>
         </div>
 
 
@@ -129,6 +135,7 @@
     </div>
 
 
-    
+    <script src="js/script.js"></script>
 </body>
+
 </html>

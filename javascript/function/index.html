@@ -108,8 +108,89 @@
             named function express
             parameter function
             default parameter
+            
+            let functionname = function(){
+                // block of code
+            }
+
+            Arrow function
+            =================
+            syntax:
+            =======
+             let functionname =()=>{
+             
+             }
+        */
+
+        // let getName = (name="",n1,n2) => {
+
+        //     // n1 => 40 
+        //     //  n2 => undefined
+        //     //  40 + undefined
+
+        //     // NaN => Not a Number
+        //     console.log("Your name is "+name , (n1+n2));
+        // }
+
+        // getName("Safa");
+        // getName();
+        // getName("",40,50);
+        // getName("",40);
+
+        // Immediately Invoked Function Expression (IIFE) 
+        /*
+        (function(){
+            //block of code
+        })();
 
         */
+
+        // (function(){
+        //         document.writeln("HI Welcome to my home")
+        // })();
+
+        // return function
+
+        //     let avg = (tot)=>{
+        //         let t = tot/5
+        //         return t;
+        //     }
+
+        //     function addition(a,b,c,d,e) {
+        //         let ts = a+b+c+d+e;
+        //        return ts;
+        //     }
+        //    let totalmark =   addition(50,30,50,60,70)
+
+        //    let avgval =  avg(totalmark)
+
+        //    console.log(totalmark)
+        //    console.log(avgval)
+        //   console.log(sum)
+
+        let lbhfun = (l, b, h) => {
+            let ans = l * b * h;
+            return ans;
+        }
+        let ap4fun = (a)=>{
+            let ans = a*a*a*a;
+            return ans;
+        }
+        let op = prompt("Enter the number \n 1. l b h \n 2. a power 4 \n 3. pi * r * r")
+        switch (op) {
+            case "1":
+                let l = prompt("enter L ?")
+                let b = prompt("enter B ?")
+                let h = prompt("enter H ?")
+                let volume = lbhfun(l, b, h); //call
+                document.writeln("Volumn Answer is=>", volume);
+                break;
+            case "2":
+                let a = prompt("enter a?")
+                let ap4 = ap4fun(a);
+                document.writeln("apow4 Answer is=>", ap4);
+                break;
+        }
     </script>
 
 </body>
