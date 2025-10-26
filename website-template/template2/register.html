@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+<!-- header -->
+    <header>
+        <div class="logo" id="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="cart-count">
+                    <a href="#">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                    </a>
+                    <span id="addtocartcount">1</span>
+                </li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- end header -->
+
+<section class="register-form">
+
+    <div class="register-card">
+            <h1>Register</h1>
+
+          <div class="form-control">
+            <label for="">UserName</label>
+            <input type="text" id="uname" placeholder="Ex. safa">
+            <span class="error" id="unameError"></span>
+          </div>
+          <div class="form-control">
+            <label for="">Email</label>
+            <input type="email" id="email" placeholder="Ex.abc@gmail.com">
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-control">
+            <label for="">Password</label>
+            <input type="password" id="pass" placeholder="Ex xxxxxx">
+            <span class="error" id="passError"></span>
+          </div>
+          <div class="form-control"> 
+            <button type="submit" onclick="register_form()">Submit</button>
+          </div>
+
+    </div>
+
+</section>
+
+
+<script src="js/register.js"></script>
+
+</body>
+
+</html>

@@ -24,9 +24,14 @@
      .innerText
      .innerHTML
      .textContent
+     .value
     
     -->
+
+
     <h1 id="heading">Safa <span id="totalcount">1</span></h1>
+
+    <input type="text" id="phone_no"> <br>
 
     <button onclick="increment()">Add to Cart</button>
     <script>
@@ -36,11 +41,19 @@
         //  console.log(h.innerText)
 
         let increment = () => {
-            let c = document.getElementById("totalcount");
-            let count = Number(c.innerText)
-            count += 1;  // count = count+1;
+            //let c = document.getElementById("totalcount");
+            // let count = Number(c.innerText)
+            /*count += 1;  // count = count+1;
             console.log(count)
-            c.innerText = count;
+            c.innerText = count;*/
+
+        //  let heading =    document.getElementById("heading")
+        //   console.log(heading.innerText)
+        //   console.log(heading.innerHTML)
+
+         let phone =  document.getElementById("phone_no")
+         console.log(phone.value)
+
         }
 
 
