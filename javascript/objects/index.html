@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+
+    <h1>OBjects</h1>
+
+
+    <script>
+        let a = 5;
+        let b = 10
+        let name = "safa";
+        /*
+            object
+            ======
+
+             object literals
+             ================
+            let variablename = {
+                key1: value1,
+                key2: value2,
+                key3:value3,
+                ........
+            };
+
+            constructor()
+            let variable =new Object({})
+
+            ex
+            ====
+            const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+            isStudent: false,
+            fullname:function(){
+                return this.firstName + this.lastName;
+            }
+            };
+
+        */
+
+        let person = {
+            firstname: "safa",
+            lastname: "E",
+            dob: '2005-8-9',
+            address: 'malasiya',
+            isStudent: true,
+        };
+        //  2 types
+        // ===========
+        // dot notation 
+        // bracket notataion
+
+        // access the data
+        // console.log(person['firstname'])
+        console.log(person.firstname)
+        console.log(person.lastname)
+        console.log(person.dob)
+        console.log(person.isStudent)
+
+        //  add one new property / key
+        person.sibling_name = 'sana.e'
+        person.mothername = 'dilsath'
+
+        // update existing property /key
+
+        person.dob = '2004-05-03'
+        console.log(person.firstname)
+        console.log(person.lastname)
+        console.log(person.dob)
+        console.log(person.isStudent)
+
+        // delete property
+
+        delete person.address
+
+        console.log(person)
+    </script>
+
+</body>
+
+</html>
