@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+
+    <h1>String</h1>
+
+     <input type="text" id="fname" placeholder="firstname"> <br>
+     <input type="text" id="lname" placeholder="lastname"> <br>
+
+     <!-- <textarea rows="" cols="" id="address">
+
+     </textarea> <br> -->
+ <button onclick="clickFun()">Click</button>
+
+ <p id="length"></p>
+ <p id="ucase"></p>
+ <p id="lcase"></p>
+ <p id="charat"></p>
+ <p id="charcodeat"></p>
+
+    <script>
+
+     let clickFun = () =>{
+    //   let ad =   document.getElementById("address").value
+    //    console.log(ad.length)
+        // document.getElementById("length").innerText ="Length = "+ad.length
+
+        // concat
+    let fname=  document.getElementById("fname").value
+    let lname=    document.getElementById("lname").value
+    //  console.log(fname.concat(lname))
+     document.getElementById("length").innerText = fname.concat(" ",lname);
+
+     document.getElementById("ucase").innerText = fname.toUpperCase();
+     document.getElementById("lcase").innerText = lname.toLowerCase();
+    //  document.getElementById("charat").innerText = fname[Number(lname)];
+     document.getElementById("charat").innerText = fname.charAt(4);
+     document.getElementById("charcodeat").innerText = fname.charCodeAt(4);
+
+    //  console.log(fname)
+    //  console.log(fname.trimStart())
+    //  console.log(fname.trimEnd())
+    //  console.log(fname.trim())
+
+    //  xxxxxx7898
+    // padStart(5,"*")
+    // padEnd()
+
+    console.log(fname.padStart(12,"X"))
+    console.log(fname.padEnd(12,"X"))
+
+
+    // repeat()
+
+    console.log(fname.repeat(2))
+
+
+
+     }
+
+        /*
+
+        let name = "sdfdsf";
+
+
+        */
+        // string literals
+        // let name = "safa"
+        
+
+        // constructor
+        // let n1 = new String("Sana")
+        // console.log(n1)
+        // console.log(n1.length)
+        // console.log(name.length)
+
+        // Template Literals ``
+
+        // let n1 = `<h1>SANA ${name} </h1>`
+
+        // document.writeln(n1)
+
+
+    </script>
+
+
+</body>
+
+</html>
