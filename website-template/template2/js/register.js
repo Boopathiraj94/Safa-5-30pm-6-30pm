@@ -1,3 +1,5 @@
+let usersList = [];
+
 let register_form = () => {
 
     let uname = document.getElementById("uname");
@@ -47,8 +49,14 @@ let register_form = () => {
             password: pass.value
         };
 
-        console.log(user_details)
-    }else{
+
+        usersList.push(user_details)
+        // console.log(usersList)
+        localStorage.setItem("userList", JSON.stringify(usersList))
+        uname.value = ""
+        email.value = ""
+        pass.value = ""
+    } else {
         console.log("object is not generate")
     }
 

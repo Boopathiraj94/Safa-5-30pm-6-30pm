@@ -25,6 +25,8 @@
  <p id="charat"></p>
  <p id="charcodeat"></p>
 
+ <p id="replace"></p>
+
     <script>
 
      let clickFun = () =>{
@@ -53,16 +55,27 @@
     // padStart(5,"*")
     // padEnd()
 
-    console.log(fname.padStart(12,"X"))
-    console.log(fname.padEnd(12,"X"))
+    // console.log(fname.padStart(12,"X"))
+    // console.log(fname.padEnd(12,"X"))
 
 
     // repeat()
 
-    console.log(fname.repeat(2))
+   // console.log(fname.repeat(2))
+
+    // let rcontent =  fname.replace("raj","riyaz")
+    // let rcontent =  fname.replace("Raj",lname)
+    // regular express Regx 
+    // i => case insensitive
+    // g => global
+    // let rcontent =  fname.replace(/Raj/ig,lname)
+    let rcontent =  fname.replaceAll("Raj",lname)
 
 
-
+    document.getElementById("replace").innerText = rcontent;
+ 
+// string to array 
+    console.log(fname.split(""))
      }
 
         /*
