@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/keyboard.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="form-box">
+            <form action=""  onsubmit="datasend()">
+                <div class="form-control">
+                    <label for="#">Message</label>
+                    <textarea name="" id="message" onblur="blurClr()" onfocus="focusClr()"
+                        onkeyup="checkCount()"></textarea>
+                </div>
+
+                <div class="form-control">
+                    <label for="#">Background Color</label>
+                    <select name="" id="bg-clr" onchange="bgColor1()">
+                        <option value="pink">pink</option>
+                        <option value="lightblue">lightblue</option>
+                        <option value="lightgreen">lightgreen</option>
+                    </select>
+                </div>
+
+                 <div class="form-control">
+                    <input type="color" >
+                 </div>
+
+                <div class="form-control">
+                    <p id="length">Letter Count: 0</p>
+                </div>
+
+                 <div class="form-control">
+                    <button type="submit">Submit</button>
+                 </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="./js/keyboardevet.js"></script>
+</body>
+
+</html>
