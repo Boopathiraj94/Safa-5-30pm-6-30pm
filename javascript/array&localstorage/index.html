@@ -10,110 +10,88 @@
 
 <body>
 
-    <h1>Array</h1>
-
-    <input type="text" placeholder="enter subject" id="subject_name"> <br>
-    <input type="number" placeholder="Enter your mark" id="mark"> <br>
-
-    <button onclick="addSubjectMark()">Submit</button>
 
 
-     <table>
-         <thead>
-        <tr> 
-                <th>Sno</th>
-                <th>Subject Name</th>
-                <th>Mark</th>
-        </tr>
-        </thead>
-        <tbody id="loadSubject">
-            <tr>
-                <td>1</td>
-                <td>Tamil</td>
-                <td>40</td>
-            </tr>
-        </tbody>
+    <div class="container">
 
-     </table>
+        <div class="form-box">
+            <h1>Student Marks</h1>
+            <div class="form-control">
+                <input type="hidden" id="subject_index">
+                <label for="">Subject</label>
+                <input type="text" placeholder="enter subject" id="subject_name">
+            </div>
+            <div class="form-control">
+                <label for="">Marks</label>
+                <input type="number" placeholder="Enter your mark" id="mark">
+            </div>
 
+            <div class="form-control">
+                <button onclick="addSubjectMark()">Submit</button>
+            </div>
+
+            <div class="form-control">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sno</th>
+                            <th>Subject Name</th>
+                            <th>Mark</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="loadSubject">
+                        <tr>
+                            <td>1</td>
+                            <td>Tamil</td>
+                            <td>40</td>
+                            <td>
+                                <button>Update</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/script.js"></script>
 
     <script>
-       let marks ;
-        let getStorage=()=>{
-             marks   = localStorage.getItem("marks")
-            // console.log(marks)
-            marks =  JSON.parse(marks)
-            // console.log(marks)
-        }
+       
 
-          getStorage();
-  
- let totalSubjectmarks=[];
-    let addSubjectMark = ()=>{
-        // debugger; 
-       let m =  document.getElementById("mark").value;
-       let s =  document.getElementById("subject_name").value;
+        //  let ad = [40,50,60,70,20];
+        //      ad[100] = "safa";
+        //    console.log(ad)
+        //  console.log(ad[0])
+        //  console.log(ad[1])
+        //  console.log(ad[2])
+        //  console.log(ad[3])
+        //  console.log(ad[4])
+        //  console.log(ad[7])
 
-       let subObj = {
-          "subjectname":s,
-          "mark":m
-       };
- 
-        totalSubjectmarks.push(subObj) 
-       localStorage.setItem("marks",JSON.stringify(totalSubjectmarks));
-        getStorage(); 
-       loadList()
-    }   
-
-
-
-    let loadList = () =>{
-    let row='';
-    if(marks && marks.length >=1){
-        for(let val of marks){ 
-      row +=    ` <tr>
-                <td>1</td>
-                <td>${val.subjectname}</td>
-                <td>${val.mark}</td>
-            </tr>`; 
-    }
-
-  let tbody =  document.getElementById("loadSubject")
-  tbody.innerHTML = row;
-    }
-    
-}
-
-
-loadList()
-
-    //  let ad = [40,50,60,70,20];
-//      ad[100] = "safa";
-//    console.log(ad)
-    //  console.log(ad[0])
-    //  console.log(ad[1])
-    //  console.log(ad[2])
-    //  console.log(ad[3])
-    //  console.log(ad[4])
-    //  console.log(ad[7])
-
-    // for(let i=0;i<ad.length;i++){
-    //     console.log(ad[i])
-    // }
-    //  for .. in
-    /*
-        for(let idx   in  array){
-        }
-    */
-    //    for(let idx   in  ad){
-    //     console.log(ad[idx])
-    //    }
-    // for .. of
-// let d=9
-// let d={}
-    //  for(let d of ad ){
-    //     console.log(d)
-    //  }
+        // for(let i=0;i<ad.length;i++){
+        //     console.log(ad[i])
+        // }
+        //  for .. in
+        /*
+            for(let idx   in  array){
+            }
+        */
+        //    for(let idx   in  ad){
+        //     console.log(ad[idx])
+        //    }
+        // for .. of
+        // let d=9
+        // let d={}
+        //  for(let d of ad ){
+        //     console.log(d)
+        //  }
 
 
 
@@ -204,24 +182,20 @@ loadList()
 
         // console.log(arr)
 
-//         arr.shift()
-
-        
-
-//         arr.unshift("safa")
-// console.log(arr)
-
-    //  concat
-
-    // let a = [1,2,3,4]
-    // let b = [4,6,7,8]
-    // let c =   a.concat(b)
-
-    // console.log(c)
+        //         arr.shift()
 
 
 
+        //         arr.unshift("safa")
+        // console.log(arr)
 
+        //  concat
+
+        // let a = [1,2,3,4]
+        // let b = [4,6,7,8]
+        // let c =   a.concat(b)
+
+        // console.log(c)
     </script>
 
 </body>

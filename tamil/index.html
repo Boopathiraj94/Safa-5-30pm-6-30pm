@@ -7,18 +7,48 @@
     <title>Document</title>
 
     <style>
-        div {
-            border: 2px solid;
+        .card {
             width: 300px;
-            height: 300px;
-            border-radius: 50%;
+            height: 350px;
+            perspective: 1000px;
+            /* enables 3D flipping */
+            border: 2px solid red;
+             position: relative;
         }
 
-        div img {
+        .inner {
+            /* position: relative;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
+            transition: transform 1s;
+            transform-style: preserve-3d; */
+            /* keep both sides in 3D space */
+        }
+
+        .card:hover .inner {
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .front {
+            background: darkgoldenrod;
+        }
+
+        .back {
+            background: darkmagenta;
+            transform: rotateY(180deg);
         }
     </style>
 
@@ -26,10 +56,17 @@
 
 <body>
 
-    <div>
-        <img src="https://m.media-amazon.com/images/I/51TvFtgi2jL._UF1000,1000_QL80_.jpg" alt="">
-    </div>
 
+    <div class="card">
+        <div class="inner">
+            <div class="front">
+                <h1>Front</h1>
+            </div>
+            <div class="back">
+                <h1>Back</h1>
+            </div>
+        </div>
+    </div>
 
 </body>
 

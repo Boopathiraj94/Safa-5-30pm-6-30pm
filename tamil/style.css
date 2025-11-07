@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid red;
+   
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/031/624/488/small/background-for-productgraphy-ai-generated-photo.jpg) no-repeat;
+    color: transparent;
+    background-clip: text;
+    background-position: center;
+    background-size: cover; */
+     overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bird1{
+    position: absolute;
+}
+.bird2{
+    position: absolute;
+}
+.cloud{
+    position: absolute;
+}
+.forest{
+    position: absolute;
+}
+.mountains{
+    position: absolute;
+}
+.rocks{
+    position: absolute;
+}
+.sky{
+    position: absolute;
+}
+.splash{
+    position: absolute;
+}
+.sun{
+    position: absolute;
+}
+.water{
+    position: absolute;
+}
+
+h1 {
+    font-size: 10vw;
+    font-weight: 900;
+    background: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* top: 200px; */
+
+    /* animation: change 5s linear infinite; */
+}
+
+@keyframes change {
+
+    from {
+        background: url(https://plus.unsplash.com/premium_photo-1675802520884-45ad9a50c2c9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGxhaW4lMjBiYWNrZ3JvdW5kc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000) no-repeat;
+        color: transparent;
+        background-clip: text;
+    }
+
+    to {
+        background: url(https://wallpapercave.com/wp/wp2610925.jpg) no-repeat;
+        color: transparent;
+        background-clip: text;
+    }
+}
