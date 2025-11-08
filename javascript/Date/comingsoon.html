@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/soon.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <div class="datebox">
+            <div class="box box1">5</div>
+            <div class="box box2">01</div>
+            <div class="box box3">00</div>
+        </div>
+    </div>
+
+   <a href=""><img src="" alt=""></a> 
+
+    
+
+    <script>
+
+        setInterval(() => {
+
+            let date = new Date()
+
+            let hour = date.getHours()
+            let min = date.getMinutes()
+            let sec = date.getSeconds()
+
+            document.querySelector(".box1").innerHTML = hour
+            document.querySelector(".box2").innerHTML = min
+            document.querySelector(".box3").innerHTML = sec
+
+        }, 1000)
+
+
+
+    </script>
+</body>
+
+</html>
