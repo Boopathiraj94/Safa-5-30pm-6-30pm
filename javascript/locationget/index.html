@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>BOM</h1>
+
+    <button id="openwin">Open window</button>
+    <button id="resizewin">Resize window</button>
+    <button id="movewin" >MoveTo window</button>
+    <button id="closewin">Close window</button>
+
+    <!-- <button id="contact">contact</button>
+    <button id="back">back</button> -->
+    <script>
+
+        let mywindow;
+
+       let openwin =  document.querySelector("#openwin")
+
+       openwin.addEventListener("click",()=>{
+
+       mywindow =  window.open("","Safa","width=400,height=400")
+        mywindow.document.writeln("Hi Safa , I am Python developer")  
+       }) 
+    //    resize 
+    document.querySelector("#resizewin").addEventListener("click",()=>{
+        if(mywindow){
+            mywindow.resizeTo(500,300)
+        }else{
+            alert("First Open the Window")
+        }
+        
+    }) 
+     //    moveto 
+    document.querySelector("#movewin").addEventListener("click",()=>{
+        if(mywindow){
+             mywindow.moveTo(500,300)
+        }else{
+             alert("First Open the Window")
+        }
+       
+    }) 
+    //    close 
+  document.querySelector("#closewin").addEventListener("click",()=>{
+
+     if(mywindow){
+        mywindow.close()
+     }else{
+        alert("First Open the Window")
+     }
+    
+
+  })
+
+
+
+    //     const screenInfo = `
+    //     <strong>Screen Width:</strong> ${screen.width} px<br>
+    //     <strong>Screen Height:</strong> ${screen.height} px<br>
+    //     <strong>Available Width:</strong> ${screen.availWidth} px<br>
+    //     <strong>Available Height:</strong> ${screen.availHeight} px<br>
+    //     <strong>Color Depth:</strong> ${screen.colorDepth} bits<br>
+    //     <strong>Pixel Depth:</strong> ${screen.pixelDepth} bits
+    //   `;
+
+ 
+    //   document.writeln(screenInfo)
+
+        // let contact = document.querySelector("#contact")
+        // contact.addEventListener("click", () => {
+        //     window.location.href = "contact.html"
+        // })
+
+
+        // let back = document.querySelector("#back")
+
+        // back.addEventListener("click", () => {
+        //     window.history.back()
+        // })
+
+
+
+        //    let cc = window.location;
+
+        //     let url = cc.href
+
+        //     console.log(url)
+
+        //      console.log("host =>" ,cc.host)
+        //      console.log("ipaddress =>" ,cc.hostname)
+        //      console.log("port =>" ,cc.port)
+        //      console.log("protocol =>" ,cc.protocol)
+        //      console.log("origin =>" ,cc.origin)
+        //      console.log("pathname =>" ,cc.pathname)
+        //  console.log("pathname =>" ,cc.reload())
+
+        //    let google =   document.querySelector("#google")
+        //   cc.assign("https://www.google.com/")
+        //    google.addEventListener("click",()=>{
+        //         // window.location.assign("https://www.google.com/")
+        //         window.location.href = "https://www.google.com/"
+        //    })
+
+
+    </script>
+
+</body>
+
+</html>

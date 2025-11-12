@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="index">index</button>
+
+
+    <button id="forward">forward</button>
+
+
+    <script>
+        let index = document.querySelector("#index")
+        index.addEventListener("click", () => {
+            window.location.href = "index.html"
+        })
+
+        let forward = document.querySelector("#forward")
+
+        forward.addEventListener("click", () => {
+                window.history.go(-10)
+        })
+
+    </script>
+</body>
+
+</html>
