@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid;
+   /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-wrap: wrap;
+    background: saddlebrown;
+   
+}
+
+.card{ 
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px black;
+    background: rgba(255, 255, 255, 0.485);
+    backdrop-filter: blur(5px);
+     margin: 10px;
+}
+
+.card img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.card h3{
+    margin: 1rem 0;
+}
+.card .contact{
+    /* border: 2px solid; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa{
+    font-size: 10rem;
+}
