@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Class / object</h1>
+
+
+
+    <!-- 
+    class className{
+    
+       let empname=""
+       let empage=""
+       let empsalary=""
+       let empcity=""
+            constructor(){
+            
+            }
+
+     setter(){
+     }
+
+     getter(){
+     
+     }
+
+    }
+    
+    -->
+    <script>
+
+        // extends  => inheritance
+
+        class ParentMom{
+            constructor(){
+                this.money = 20000;
+            }
+        } 
+        class Safa extends ParentMom{
+
+            constructor(){
+                super()
+            } 
+        } 
+        class Sana extends ParentMom{
+            constructor(){
+                super()
+            }
+        } 
+        let m1 = new Safa()
+        let m2 = new Sana()
+        console.log("MOther money=>",m1.money)
+        console.log("MOther money=>",m2.money)
+
+
+
+
+        // class Mobile { 
+        //     // constructor(mname, mprice) {
+        //     //     this.mobileName = mname;
+        //     //     this.mobliePrice = mprice;
+        //     // } 
+        //     setDetails(mname, mprice) {
+        //         this.mobileName = mname;
+        //         this.mobliePrice = mprice;
+        //     } 
+        //     getDetails() {
+        //         return [this.mobileName, this.mobliePrice]
+        //     } 
+        // } 
+        // let m1 = new Mobile("VIVO", 25000)
+        // let m2 = new Mobile("Oppo", 15000)
+        // let m3 = new Mobile("Samsung", 35000)
+        // let m4 = new Mobile("Iphone", 55000) 
+        // let m1 = new Mobile();
+        // m1.setDetails("VIVO", 25000)
+        // //    console.log(m1 , m2,m3,m4)
+        // console.log(m1.getDetails())
+    </script>
+
+</body>
+
+</html>
