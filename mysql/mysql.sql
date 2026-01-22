@@ -151,3 +151,148 @@ select *,date_format(created_at , "%y-%m-%d") as created_at from products;
   
   select * from products where product_name like '__t%';
   select * from products where product_name like '%_m_%';
+  
+  use wall_mart;
+  -- aggregation
+  
+  select sum(stock) as "Total_stock",min(stock) as "min_stock" ,
+  max(stock) as "max_stock",count(stock) as "Total Product",avg(stock) as "avg_stock"
+  
+  from products ;
+  select   date(created_at) from products;
+  
+  
+  select sum(stock) as "Total_stock",min(stock) as "min_stock" ,
+  max(stock) as "max_stock",count(stock) as "Total Product",avg(stock) as "avg_stock" 
+  from products where date(created_at) = '2026-01-02';
+  
+  update products set category='snackes' where sno = 1;
+  
+  select category, sum(stock),min(stock) from products  group by category
+  having category <> 'snackes';
+  
+select category, sum(stock),min(stock) from products  group by category 
+having sum(stock) >100;
+	
+select category, sum(stock),min(stock) from products  group by category order by category;
+select category, sum(stock),min(stock) from products  group by category order by sum(stock) desc;
+
+-- not null
+create table employees(emp_id int not null , emp_name varchar(100) not null,
+age int , dob date not null , address text not null , phone varchar(15) not null
+);
+
+drop table employees;
+
+--  primary key
+create table employees(emp_id int primary key auto_increment, emp_name varchar(100) not null,
+age int , dob date not null , address text not null , phone varchar(15) not null);
+
+
+create table employees(emp_id int auto_increment, emp_name varchar(100) not null,
+age int , dob date not null , address text not null , 
+phone varchar(15) not null,primary key(emp_id));
+
+
+create table employees(emp_id int auto_increment, emp_name varchar(100) not null,
+age int , dob date not null , address text not null , 
+phone varchar(15) not null, constraint pk_emp_id primary key(emp_id) );
+
+desc employees;
+
+-- unique
+create table employees(emp_id int primary key auto_increment , emp_name varchar(100) not null,
+age int , dob date not null , address text not null , 
+phone varchar(15) unique key,email_id varchar(100) unique key,pan_no varchar(200) unique key);
+
+-- default
+
+create table employees(emp_id int primary key auto_increment , emp_name varchar(100) not null,
+age int , dob date not null , address varchar(100)  default 'Trichy' , 
+phone varchar(15) unique key,email_id varchar(100) unique key,pan_no varchar(200) unique key,
+added_at timestamp default current_timestamp()
+);
+
+-- check 
+
+create table employees(emp_id int primary key auto_increment , emp_name varchar(100) not null,
+age int , dob date not null , address varchar(100)  default 'Trichy' , 
+phone varchar(15) unique key,email_id varchar(100) unique key,pan_no varchar(200) unique key,
+added_at timestamp default current_timestamp(),check (address = 'Trichy')
+);
+
+
+alter table employees add check (age>=18);
+
+drop table employees;
+insert into employees (emp_name , dob,phone,email_id,pan_no) 
+values('SAFA','2000-01-25','498465464sd','safad@gmail.com','12345d');
+
+insert into employees (emp_name ,age, dob,phone,email_id) 
+values('SAFA',18,'2000-01-25','4984654645ddddd','safaaddddd@gmail.com');
+
+
+insert into employees (emp_name , dob,address,phone) 
+values('SANA','2000-01-26','Trichy','56464446d');
+select * from employees;
+select * from employees;
+
+drop table products;
+use wall_mart;
+
+create table products(pid int primary key auto_increment,pname varchar(255),
+price double default 0 , employee_id int ,
+foreign key (employee_id) references employees(emp_id)
+);
+
+ALTER TABLE products
+DROP FOREIGN KEY products_ibfk_1;
+
+select * from products;
+
+insert into products (pname,price,employee_id) values('hhh',300,3);
+
+insert into products (pname,price,employee_id) values('tomoto22',500,90);
+
+alter table employees add index (address);
+
+desc employees;
+
+desc products;
+
+-- join
+
+ -- select t1.column1, t2.column2,t1.column3
+ -- from table1 as t1 inner join table2 as t2 on  table1.column1 = table2.column1
+select * from products;
+select p.pname,p.price,e.emp_name,e.age,e.address,e.emp_id
+ from products as p inner join employees as e on 
+p.employee_id = e.emp_id; 
+
+select p.pname,p.price,e.emp_name,e.age,e.address,e.emp_id
+ from products as p left join employees as e on 
+p.employee_id = e.emp_id;
+
+select p.pname,p.price,e.emp_name,e.age,e.address,e.emp_id
+ from products as p right join employees as e on 
+p.employee_id = e.emp_id ; 
+
+select products.pname , employees.emp_name from products cross join employees;
+
+select * from employees;
+
+create table category(cid int primary key auto_increment ,
+category_name varchar(50),subcategory varchar(50), category_id int );
+
+select * from category;
+
+delete from category;
+insert into category (category_name) values
+('car'),('toy'),('dress');
+
+insert into category (subcategory,category_id) values
+('Toyoto',4),('bike toy', 5),('saree',6);
+
+select c1.cid,c1.category_name,c2.cid as "subcat_id",c2.subcategory
+
+ from category c1 , category c2 where c1.cid = c2.category_id order by c1.cid
